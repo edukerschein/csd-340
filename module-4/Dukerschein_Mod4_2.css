@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: .75em;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+a {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  margin-top: 10%;
+  display: inline-grid;
+}
+
+.gallery-item {
+  display: inline-block;
+}
+
+.div-last {
+  width: 100%;
+  margin-top: 60%;
+  margin-bottom: 20px;
+}
