@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Module 2 Assignment 2.2">
+    <meta name="keywords" content="Bellevue University, homework, html, css">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Eva Dukerschein">
+    <link href="Dukerschein_Mod2_2.css" type="text/css" rel="stylesheet">
+    <title>CSD 340 Development with HTML and CSS</title>
+    <script>
+      var firstValue = "borogroves"
+      var secondValue = "Jabberwock"
+      var thirdValue = "vorpal"
+      var fourthValue = "frabjous"
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>Jabberwocky: by Lewis Carroll</h2>
+      <p>'Twas brillig and the slithy toves</p>
+      <p>Did gyre and gimble in the wabe:</p>
+      <p>All mimsy were the <span id="borogroves">____</span>,</p>
+      <p>And the mome rathes outgrabe.</p>
+      <br>
+      <p>Beware the <span id="Jabberwock">____</span>, my son!</p>
+      <p>The jaws the bite, the claws that catch!</p>
+      <p>Beware the Jubjub bird, and shun</p>
+      <p>The frumious Bandersnatch!</p>
+      <br>
+      <p>He took his <span id="vorpal">____</span> sword in hand;</p>
+      <p>Long time the manxome foe he sought -</p>
+      <p>So rested he by the Tumtum tree</p>
+      <p>And stood awhile in thought.</p>
+      <br>
+      <p>And, as in uffish thought he stood,</p>
+      <p>The Jabberwock, with eyes of flame,</p>
+      <p>Came whiffling through the tulgey wood,</p>
+      <p>And burbled as it came!</p>
+      <br>
+      <p>One, two! One, two! And through and through</p>
+      <p>The vorpal blade went snicker-snack!</p>
+      <p>He left it dead, and with its head</p>
+      <p>He went galumphing back.</p>
+      <br>
+      <p>"And hast thou slain the Jabberwock?</p>
+      <p>Come to my arms, my beamish boy!</p>
+      <p>O <span id="frabjous">____</span> day! Callooh! Callay!"</p>
+      <p>He chortled in his joy.</p>
+      <br>
+      <p>'Twas brillig, and the slithy toves</p>
+      <p>Did gyre and gimble in the wabe;</p>
+      <p>All mimsy were the borogroves</p>
+      <p>And the mome raths outgrabe.</p>
+      <br>
+      <p><button type="button" onclick="document.getElementById('borogroves').innerHTML = firstValue">borogroves</button></p>
+      <p><button type="button" onclick="document.getElementById('Jabberwock').innerHTML = secondValue">Jabberwock</button></p>
+      <p><button type="button" onclick="document.getElementById('vorpal').innerHTML = thirdValue">vorpal</button></p>
+      <p><button type="button" onclick="document.getElementById('frabjous').innerHTML = fourthValue">frabjous</button></p>
+      <hr>
+      <address>
+        <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, Nebraska 68005</p>
+      </address>
+    </div>
+  </body>
+</html>
