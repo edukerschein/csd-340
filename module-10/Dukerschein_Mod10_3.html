@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <hr>
+  </div>
+  <div id="container">
+    <h3>Click to pet the dog.</h3>
+    <div>
+      <img id="dog" src="dog1.jpg" onclick="changeImage()">
+      <script>
+        function changeImage(){
+          let image = document.getElementById("dog");
+          if (image.src.match("dog1.jpg")){
+            image.src = "dog2.jpg";
+          } else {
+            image.src = "dog1.jpg";
+          }
+        }
+      </script>
+    </div>
+  </div>
+</body>
+</html>
+<!---Change Image using Onclick. Simple Js tricks. (n.d.). Www.youtube.com. Retrieved February 24, 2024, from https://www.youtube.com/watch?v=1j-XMwrLcg8--->
+
+
+‌
