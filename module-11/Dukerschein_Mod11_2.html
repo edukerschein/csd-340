@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+  <h1>Assignment 11.2: JavaScript - Part 3</h1>
+  <input type="text" id="input" name="input">
+  <button type="button" id="add" name="add" onclick="addElement()">Add</button>
+  <button type="button" id="deleteLast" name="deleteLast" onclick="removeElement()">Delete Last</button>
+  <button type="button" id="display" name="display" onclick="displayElements()">Display</button>
+  <hr>
+    <ol id="list">
+    </ol>
+
+  <script>
+    let tasks = [];
+
+    function addElement(){
+      tasks.push(document.getElementById("input").value);
+      alert("Added " + document.getElementById("input").value + " at position " + tasks.length);
+      document.getElementById("input").value = "";
+    }
+
+    function removeElement(){
+      let removed = tasks.pop();
+      alert("Removed " + removed + " from the end.");
+    }
+
+    function displayElements(){
+      let fillList = document.getElementById("list");
+
+      let clearList = document.getElementById("list");
+      clearList.innerHTML = "";
+
+      for(let i = 0; i < tasks.length; i++){
+        let li = document.createElement("li");
+        li.innerText = tasks[i];
+        fillList.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>
