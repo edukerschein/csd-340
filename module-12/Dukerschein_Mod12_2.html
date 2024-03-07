@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="author" content="Eva Dukerschein">
+  <meta name="description" content="Module 3.3 Assignment">
+
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <link href="Dukerschein_Mod12_2.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <br>
+
+    <div class="div-left">
+
+      <h3>Top 10 Favorite Books</h3>
+      <button type="button" onclick="displayTopToBottom()">Top  to Bottom</button>
+      <button type="button" onclick="displayBottomToTop()">Bottom to Top</button>
+      
+      <hr>
+
+      <ol id="list">
+      </ol>
+
+      <ol reversed id="listReversed">
+      </ol>
+
+    </div>
+
+    <div class="div-right">
+
+      <h3>5 Things I’ve Learned Since the Course Started</h3>
+      <ul>
+        <li>GitPages</li>
+        <li>@fontface</li>
+        <li>font-squirrel</li>
+        <li>HSL Colors</li>
+        <li>IFrames</li>
+      </ul>
+
+    </div>
+
+    <div class="div-last">
+
+      <p><a href="../index.html">Landing Page</a></p>
+
+    </div>
+
+  </div>
+<script>
+const books = ["The Bone Doll's Twin", "Hidden Warrior", "The Oracle's Queen", "The Golden Compass", "The Subtle Knife", "The Amber Spyglass", "Ishmael", "The Lord of the Rings", "Monsterous Regiment", "Good Omens"];
+const reverseBooks = books.toReversed();
+
+let list = document.getElementById("list");
+let listReversed = document.getElementById("listReversed");
+
+function displayTopToBottom(){
+  list.innerHTML = "";
+  listReversed.innerHTML = "";
+
+  for(let i = 0; i < books.length; i++){
+    let li = document.createElement("li");
+    li.innerText = books[i];
+    list.appendChild(li);
+  }
+}
+
+function displayBottomToTop(){
+  listReversed.innerHTML = "";
+  list.innerHTML = "";
+
+  for(let i = 0; i < reverseBooks.length; i++){
+    let li = document.createElement("li");
+    li.innerText = reverseBooks[i];
+    listReversed.appendChild(li);
+  }
+}
+</script>
+
+</body>
+
+</html>
